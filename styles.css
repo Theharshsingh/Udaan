@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section#connect, section#knowledge, section#market {
+    background-color: #1E1E1E;
+}
+
+.btn-outline-light {
+    border: 1px solid #64B5F6;
+    color: #64B5F6;
+    transition: background-color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #64B5F6;
+    color: #fff;
+}
+
+footer {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+footer p {
+    font-size: 0.875rem;
+}

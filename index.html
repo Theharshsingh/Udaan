@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UDAAN - Empowering through Microfinance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-white">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">UDAAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#connect">Connect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#loans">Loans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#knowledge">Knowledge</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#market">Market</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Empowering Communities with UDAAN</h1>
+            <p class="lead">Connecting Microfinance Institutions and Self-Help Groups with the resources you need.</p>
+            <a href="#connect" class="btn btn-light btn-lg">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Connect Section -->
+    <section id="connect" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Connect with MFIs & SHGs</h2>
+            <p>Find local MFIs and SHGs, view their contact details, and discover opportunities.</p>
+            <a href="#" class="btn btn-outline-light">View Connections</a>
+        </div>
+    </section>
+
+    <!-- Loans Section -->
+    <section id="loans" class="bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-4">Loans & Interest Rates</h2>
+            <p class="text-light">Discover loan offerings and their interest rates from MFIs and SHGs.</p>
+            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loanModal">See Loan Options</button>
+        </div>
+    </section>
+
+    <!-- Knowledge Section -->
+    <section id="knowledge" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Knowledge Resources</h2>
+            <p>Access valuable articles, guides, and tips shared by MFIs and SHGs.</p>
+            <a href="#" class="btn btn-outline-light">Explore Knowledge</a>
+        </div>
+    </section>
+
+    <!-- Local Market Section -->
+    <section id="market" class="bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-4">Local Market Opportunities</h2>
+            <p class="text-light">Learn about local market conditions and business opportunities available.</p>
+            <a href="#" class="btn btn-outline-light">Explore Local Market</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark">
+        <p>&copy; 2025 UDAAN. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Loan Modal -->
+    <div class="modal fade" id="loanModal" tabindex="-1" aria-labelledby="loanModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loanModalLabel">Loan Options</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><strong>Loan Type:</strong> Microloan - <strong>Interest Rate:</strong> 5%</li>
+                        <li><strong>Loan Type:</strong> Education Loan - <strong>Interest Rate:</strong> 6%</li>
+                        <li><strong>Loan Type:</strong> Business Loan - <strong>Interest Rate:</strong> 7%</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

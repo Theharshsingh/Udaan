@@ -1,5 +1,9 @@
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #f0f0f0; /* Light text for better contrast */
+    background-color: #121212;
 }
 
 .hero {
@@ -27,9 +31,14 @@ section#connect, section#knowledge, section#market {
 }
 
 .btn-outline-light {
-    border: 1px solid #64B5F6;
+    background-color: transparent; /* Transparent background for the button */
+    border: 2px solid #64B5F6; /* Thicker border for better visibility */
     color: #64B5F6;
-    transition: background-color 0.3s;
+    padding: 10px 20px; /* Added padding for a better button size */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    cursor: pointer;
 }
 
 .btn-outline-light:hover {

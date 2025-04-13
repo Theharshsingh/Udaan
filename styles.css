@@ -60,6 +60,21 @@ footer {
 footer p {
     font-size: 0.875rem;
 }
+.collapsible {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
 
+.collapsible:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
 
 

@@ -82,6 +82,44 @@
             </div>
         </div>
     </section>
+
+    <!-- Tabs for Knowledge Resources -->
+<div class="tabs"  align="center">
+    <button class="tablink" onclick="openTab(event, 'Articles')">Articles</button>
+    <button class="tablink" onclick="openTab(event, 'Guides')">Guides</button>
+    <button class="tablink" onclick="openTab(event, 'Tips')">Tips</button>
+</div>
+
+<div id="Articles" class="tabcontent">
+    <h3>Articles</h3>
+    <p>Content for articles goes here.</p>
+</div>
+
+<div id="Guides" class="tabcontent" style="display:none">
+    <h3>Guides</h3>
+    <p>Content for guides goes here.</p>
+</div>
+
+<div id="Tips" class="tabcontent" style="display:none">
+    <h3>Tips</h3>
+    <p>Content for tips goes here.</p>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";  
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";  
+        evt.currentTarget.className += " active";
+    }
+</script>
     
     <!-- Local Market Section -->
     <section id="market" class="bg-dark py-5">
@@ -91,6 +129,32 @@
             <a href="#" class="btn btn-outline-light">Explore Local Market</a>
         </div>
     </section>
+
+    <!-- Collapsible FAQ Section -->
+<button class="collapsible">What is UDAAN?</button>
+<div class="content">
+    <p>UDAAN is a platform that provides financial assistance to small businesses.</p>
+</div>
+
+<button class="collapsible">How to apply for a loan?</button>
+<div class="content">
+    <p>You can apply for a loan through our online application form.</p>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 
     <!-- Footer -->
     <footer class="text-center py-4 bg-dark">

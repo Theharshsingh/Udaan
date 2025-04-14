@@ -138,11 +138,11 @@
 <button class="collapsible">User Registration FAQ</button>
 <div class="content">
     <p>1.What information do I need to provide?<br>
-       ans. When registering, you will typically need to provide personal information such as your name, email address, and a password. Some services may ask for more depending on what you're signing up for.<br>
+       ans.  Name, email address, and a password.<br>
          2.How do I reset my password?<br>
-      ans. Look for a "Forgot Password" link on the login page. You'll typically be asked to enter your email address, and then you'll receive instructions to reset your password.<br>
+      ans. Look for a "Forgot Password" link on the login page. <br>
       3.I didn’t get the verification email — what should I do?<br>
-     ans.Check your spam/junk folder. If it’s not there, click “Resend Email” on the login page or contact support. </p>
+     ans.click “Resend Email” on the login page or contact support. </p>
 </div>
 
 <script>
@@ -160,12 +160,7 @@
     }
 </script>
 
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-dark">
-        <p>&copy; 2025 UDAAN. All Rights Reserved.</p>
-       <p>Contact us at: <a href="mailto:support@udaan.com">support@udaan.com</a></p>
-       </footer>
-
+    
     <!-- Loan Modal -->
     <div class="modal fade" id="loanModal" tabindex="-1" aria-labelledby="loanModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -188,6 +183,55 @@
             </div>
         </div>
     </div>
+    <!-- review -->
+    <div class="review-form">
+        <h2>Submit Your Review</h2>
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Review</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="reviews" id="reviews">
+        <h2>User Reviews</h2>
+        <!-- Reviews will be displayed here -->
+        <script>
+            document.getElementById('reviewForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+    
+                // Get the values from the form
+                const name = document.getElementById('name').value;
+                const review = document.getElementById('review').value;
+    
+                // Create a new review element
+                const reviewElement = document.createElement('div');
+                reviewElement.classList.add('review');
+                reviewElement.innerHTML = `<strong>${name}</strong><p>${review}</p>`;
+    
+                // Append the new review to the reviews section
+                document.getElementById('reviews').appendChild(reviewElement);
+    
+                // Clear the form
+                document.getElementById('reviewForm').reset();
+            });
+        </script>
+    
+    </div>
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark">
+        <p>&copy; 2025 UDAAN. All Rights Reserved.</p>
+       <p>Contact us at: <a href="mailto:support@udaan.com">support@udaan.com</a></p>
+       </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
